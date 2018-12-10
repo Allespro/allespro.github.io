@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: allespro.github.io
+Token: c5c2ef39c3ee8c1ca7df695e969122448c1b97841e703dfba6c175fdbcea47c5
