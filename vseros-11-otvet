@@ -1,0 +1,42 @@
+def num1():
+      here = int(input())
+      utc = int(input())
+      there = int(input())
+      answer = here - utc + there
+      print(answer)
+
+def num2():
+      min = int(input())
+      max = int(input())
+      answer = 0
+      for i in range(min, max+1):
+          if(i % 2 == 0):
+              answer += i
+          else:
+              answer -= i
+      print(answer)
+
+def num3():
+      first = int(input())
+      last = int(input())
+      n = 1
+      while not((n+1)%2==first and (n+1)%2==last):
+          n+=1
+      print(n)
+def num4():
+      string = str(input())
+      counter = 0
+      for x in range(0,int(len(string)/2)):
+        if string[x] == string[len(string)-1-x-counter]:
+          pass
+        else:
+          if string[x] == string[len(string)-2-x]:
+          counter += 1
+          error_on = len(string) - x
+        elif string[x+1] == string[len(string)-1-x]:
+          counter += 1
+          error_on = x + 2
+      if counter == 1:
+        print(error_on)
+      else:
+        print(0)
