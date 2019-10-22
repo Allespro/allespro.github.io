@@ -1,10 +1,11 @@
+#######################################
 def num1():
       here = int(input())
       utc = int(input())
       there = int(input())
       answer = here - utc + there
       print(answer)
-
+#######################################
 def num2():
       min = int(input())
       max = int(input())
@@ -15,7 +16,7 @@ def num2():
           else:
               answer -= i
       print(answer)
-
+#######################################
 def num3():
       first = int(input())
       last = int(input())
@@ -23,6 +24,7 @@ def num3():
       while not((n+1)%2==first and (n+1)%2==last):
           n+=1
       print(n)
+#######################################
 def num4():
       string = str(input())
       counter = 0
@@ -40,3 +42,4 @@ def num4():
         print(error_on)
       else:
         print(0)
+#######################################
