@@ -1,0 +1,41 @@
+// Решение первого номера ===============================================
+void number_one(){
+  int a, b, c;
+  cin >> a >> b >> c;
+  int answer = b > a ? ((24 + a) - b + c) % 24 : (a - b + c) % 24;
+  cout << answer << endl;
+}
+// Решение второго номера ===============================================
+void number_two(){
+  int a, b, sum = 0;
+  cin >> a >> b;
+  for(int i = a; i <= b; i++)
+    sum += i % 2 == 0 ? i : -i;
+  cout << sum;
+}
+// Решение третьего номера ===============================================
+void number_three(){
+  int a, b, min = 10000;
+  cin >> a >> b;
+  if (a - b == 1)
+    min = a + b;
+  else{
+      for(int i = 2; i < 10; i++)
+        for(int j = 2; j < 10; j++)
+          if((a * i) + 1 == (b * j) - 1 && min > (a * i) - 1)
+            min = (b * j) - 1;
+  }
+  cout << min;
+}
+// Решение четвертого номера на Python===============================================
+arr = input()
+    count, wow, pin = 0, 1, 0
+    for i in range(len(arr) // 2):
+        if arr[i] != arr[len(arr) - (i + wow)]:
+            count += 1
+            pin = len(arr) - (i + wow)
+            wow += 1
+    if 0 < count < 2:
+        print(pin + 1)
+    else:
+        print(0)
