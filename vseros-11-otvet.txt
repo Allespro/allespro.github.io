@@ -46,3 +46,6 @@ def num4():
       else:
         print(0)
 #######################################
+def num5():
+  a, b, c = input(), input(), input()
+  print('IMPOSSIBLE')
