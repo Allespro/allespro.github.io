@@ -1,10 +1,13 @@
 #######################################
 def num1():
-      here = int(input())
-      utc = int(input())
-      there = int(input())
-      answer = here - utc + there
-      print(answer)
+    here = int(input())
+    utc = int(input())
+    there = int(input())
+    if(utc > here):
+       answer = ((24+here)-utc+there)%24
+    else:
+       answer = (here - utc + there) % 24
+    print(answer)
 #######################################
 def num2():
       min = int(input())
